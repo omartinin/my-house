@@ -17,6 +17,8 @@ public class Picture
     private Square campo;
     private Circle sun;
     private Circle moon;
+    private Person ortega;
+    private Person gaset;
     /**
      * Constructor for objects of class Picture
      */
@@ -77,10 +79,23 @@ public class Picture
     /**
      * Simula el amanecer.
      */
-    public void Amanecer()
+    public void amanecer()
     {
        moon.makeInvisible();
-       sun.slowMoveVertical(-200);
+       sun.slowMoveVertical(-250);
+       
+       gaset = new Person();
+       gaset.moveVertical(30);
+       gaset.moveHorizontal(-300);
+       gaset.makeVisible();
+       gaset.slowMoveHorizontal(150);
+       
+       ortega = new Person();
+       ortega.moveVertical(30);
+       ortega.moveHorizontal(250);
+       ortega.makeVisible();
+       ortega.slowMoveHorizontal(-200);
+       
      
     }
     
