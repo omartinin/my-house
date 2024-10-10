@@ -75,6 +75,16 @@ public class Picture
     }
 
     /**
+     * Simula el amanecer.
+     */
+    public void Amanecer()
+    {
+       moon.makeInvisible();
+       sun.slowMoveVertical(-200);
+     
+    }
+    
+    /**
      * Change this picture to black/white display
      */
     public void setBlackAndWhite()
